@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F68BEB9-AD0A-4A33-BCF6-DECAC6424EA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Elevator</RootNamespace>
+    <AssemblyName>Elevator</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ElevatorSimulator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElevatorSimulator.Designer.cs">
+      <DependentUpon>ElevatorSimulator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JEElevatorDataSet.cs">
+      <DependentUpon>JEElevatorDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JEElevatorDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JEElevatorDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ElevatorSimulator.resx">
+      <DependentUpon>ElevatorSimulator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="JEElevatorDataSet.xsc">
+      <DependentUpon>JEElevatorDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="JEElevatorDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JEElevatorDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JEElevatorDataSet.xss">
+      <DependentUpon>JEElevatorDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\controlpanelbackground.jpg" />
+    <None Include="Images\zero.png" />
+    <None Include="Images\elevator-doors.jpg" />
+    <None Include="Images\Vertical-Line.png" />
+    <None Include="Images\buttons.jpg" />
+    <None Include="Images\elevator-clipart-elevator.jpg" />
+    <None Include="Images\elevator-header-logo%402xbw.png" />
+    <None Include="Images\up_green_arrow.png" />
+    <None Include="Images\darkwood.jpg" />
+    <None Include="Images\Small-arrow-up-icon.png" />
+    <None Include="Images\insideelevator.png" />
+    <None Include="Images\arrow_gradient_green_down.png" />
+    <None Include="Images\down_green_arrow.png" />
+    <None Include="Images\redbutton.png" />
+    <None Include="Images\rrm_smooth_texture.jpg" />
+    <None Include="Images\icon175x175.png" />
+    <None Include="Images\icon175x175 - down.png" />
+    <None Include="Images\icon175x175 - down - Copy.png" />
+    <None Include="Images\darkwood2.jpg" />
+    <None Include="Images\elevator32.jpg" />
+    <None Include="Images\elevator.png" />
+    <None Include="Images\icon175x175 - down - redlight.png" />
+    <None Include="Images\icon175x175 - Redlgiht.png" />
+    <None Include="Images\cpreddown.png" />
+    <None Include="Images\cpredup.png" />
+    <None Include="Images\redarrowup.png" />
+    <None Include="Images\redarrowdown.png" />
+    <None Include="Images\redarrowdown - Copy.png" />
+    <None Include="Images\redarrowup - Copy.png" />
+    <None Include="Images\inside.jpg" />
+    <None Include="Images\pvc_wood_pattern_sheet.jpg" />
+    <Content Include="JEElevator.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
